@@ -1,5 +1,5 @@
 import axios from "axios"
-import userModel from "../models/userModel"
+import userModel from "../models/userModel.js"
 import FormData from "form-data"
 
 export const generateImage = async(req,res)=>{
@@ -32,7 +32,9 @@ export const generateImage = async(req,res)=>{
 
         await userModel.findByIdAndUpdate(user._id,{creditBalance: user.creditBalance-1, resultImage})
 
-        res.json({succes:true, message:""})
+        res.json({success:true, message:"Image Generated", creditBalance: user.creditBalance -1, resultImage})
+
+
     }
     catch(error){
         console.log(error.message)

@@ -21,13 +21,13 @@ const registerUser= async(req,res)=>{
         const user = await newUser.save()
         const token = jwt.sign({id : user._id}, process.env.JWT_SECRET)
 
-        res.json({succes:true , token, user:{name : user.name}})
+        res.json({success:true , token, user:{name : user.name}})
 
     }
 
     catch(error){
         console.log(error)
-        res.json({succes:false, message: error.message})
+        res.json({success:false, message: error.message})
     }
 }
 
@@ -45,7 +45,7 @@ const loginUser = async(req,res)=>{
         if(isMatch){
             const token = jwt.sign({id : user._id}, process.env.JWT_SECRET)
 
-            res.json({succes:true , token, user:{name : user.name}})
+            res.json({success:true , token, user:{name : user.name}})
         }
         else{
             return res.json({success:false, message:'Invalid credentials'})
@@ -53,7 +53,7 @@ const loginUser = async(req,res)=>{
     }
     catch(error){
         console.log(error)
-        res.json({succes:false, message: error.message})
+        res.json({success:false, message: error.message})
     }
 }
 
