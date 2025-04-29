@@ -63,5 +63,33 @@ Try it live: **[Deployemnt URL](https://imagify1-13gr.onrender.com)**
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ai-text-to-image-generator.git
-cd ai-text-to-image-generator
+git clone https://github.com/Sankalp-Space/Imagify1.git
+```
+
+### 2. Install dependencies Backend
+
+```bash
+cd server
+npm install
+```
+
+### 2. Install dependencies Frontend
+
+```bash
+cd client
+npm install
+```
+### 4. Run the application 
+Backend
+```bash
+cd server
+npm run dev
+```
+Frontend
+```bash
+cd client
+npm start
+```
+
+
+
