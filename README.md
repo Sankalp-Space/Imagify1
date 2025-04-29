@@ -28,7 +28,7 @@ A full-stack AI-powered SaaS application built with the **MERN** stack (MongoDB,
 
 ## 📸 Demo
 
-Try it live: **[Deployemnt URL]((https://imagify1-13gr.onrender.com))**
+Try it live: **[Deployemnt URL](https://imagify1-13gr.onrender.com)**
 
 ---
 
